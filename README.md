@@ -8,7 +8,14 @@ Lalabot is a welcoming Slackbot written in Meteor
 Go to `https://***yourteamname***.slack.com/services/new/bot` and register a new bot.
 There you'll get a token for the bot integration.
 
+### Edit settings
+
 Edit `settings.json` with data about your bot.
+
+
+`welcomeMessage` is an `Array` of strings that get randomly called upon user join. Add as many messages as you want, one of them will print on `#general` when a new user joins.
+
+### Running
 
 Run with `meteor --settings settings.json`
 
