@@ -1,0 +1,10 @@
+{
+    "slackbotToken": "", // Insert bot token here
+    "name": "", // Name of your bot here
+    "closestRelative": "", // User that will get notified about bot starts and restarts
+    "startMessage": "", // Start message, gets prepended to the timestamp
+    "welcomeMessage": [
+        "Имамо новог члана екипе! Ако тражиш или нудиш посао уђи у <#posao>, а догађаје можеш да пратиш на <#dogadjaji>. Уживај!",
+        "Добро дошао у групу! Баци поглед на наше канале <#dogadjaji> и <#posao> и напиши нам нешто о себи."
+    ]
+}
