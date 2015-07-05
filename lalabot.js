@@ -8,13 +8,13 @@ if (Meteor.isServer) {
             token: Meteor.settings.slackbotToken, // Add a bot https://my.slack.com/services/new/bot and put the token
             name: Meteor.settings.name
         });
-        bot.on('team_join', function(user) {
+        bot.on('team_join', function() {
             // more information about additional params https://api.slack.com/methods/chat.postMessage
             var params = {
                 icon_emoji: ':balloon:'
             };
 
-            bot.postMessageToChannel('general', user.name + _.sample(Meteor.settings.welcomeMessage), params);
+            bot.postMessageToChannel('general', _.sample(Meteor.settings.welcomeMessage), params);
             // bot.postMessageToUser('username', 'meow!', params);
             // bot.postMessageToGroup('private_group', 'meow!', params);
         });
